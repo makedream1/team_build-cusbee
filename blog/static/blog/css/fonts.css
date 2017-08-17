@@ -1,0 +1,37 @@
+
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300&subset=latin,cyrillic);*/
+/*body{*/
+    /*font: bold 14px 'Roboto', sans-serif;*/
+/*}*/
+/* font-family: "HelveticaRegular"; */
+@font-face {
+	font-family: "HelveticaRegular";
+	src: url("../fonts/helvetica/HelveticaRegular/HelveticaRegular.eot");
+	src: url("../fonts/helvetica/HelveticaRegular/HelveticaRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/helvetica/HelveticaRegular/HelveticaRegular.woff") format("woff"),
+	url("../fonts/helvetica/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "HelveticaLight"; */
+@font-face {
+	font-family: "HelveticaLight";
+	src: url("../fonts/helvetica/HelveticaLight/HelveticaLight.eot");
+	src: url("../fonts/helvetica/HelveticaLight/HelveticaLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/helvetica/HelveticaLight/HelveticaLight.woff") format("woff"),
+	url("../fonts/helvetica/HelveticaLight/HelveticaLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "HelveticaMedium"; */
+@font-face {
+	font-family: "HelveticaMedium";
+	src: url("../fonts/helvetica/HelveticaMedium/HelveticaMedium.eot");
+	src: url("../fonts/helvetica/HelveticaMedium/HelveticaMedium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/helvetica/HelveticaMedium/HelveticaMedium.woff") format("woff"),
+	url("../fonts/helvetica/HelveticaMedium/HelveticaMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+

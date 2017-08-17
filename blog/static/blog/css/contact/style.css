@@ -1,0 +1,455 @@
+* {
+    margin: 0 auto;
+    padding: 0;;
+}
+html,body {
+    overflow: hidden;
+    height: 100%;
+}
+.head {
+    overflow: hidden;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: 2;
+    height: 80px;
+    width: 72%;
+}
+.form-register{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.form-register .logo {
+    float: left;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.navigation {
+    float: right;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+.navigation * {
+    vertical-align: middle;
+}
+.navigation span {
+    font-size: 36px;
+    color: #E57E20;
+}
+.navigation a:first-child {
+    margin-right: 120px;
+}
+.navigation a:last-child {
+    margin-left: 120px;
+}
+.form-register .content {
+    overflow: hidden;
+    height: 100%;
+}
+.content .MarginLeft{
+    margin-left: 100px;
+    margin-top: 120px;
+}
+.content .left-blockMap {
+    /*max-width: 980px;*/
+    height: 100%;
+    width: 72%;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.64);
+}
+.content .GetIn {
+    display: block;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.content .WriteUs {
+    max-width: 360px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+}
+form {
+    margin-top: 30px;
+}
+input[type="email"] {
+    max-width: 625px;
+    width: 100%;
+    margin-bottom: 35px;
+    padding: 10px 20px;
+}
+input[type="text"]{
+    max-width: 280px;
+    width: 100%;
+    margin-bottom: 35px;
+    padding: 10px 20px;
+}
+input[type="number"] {
+    max-width: 280px;
+    width: 100%;
+    margin-bottom: 35px;
+    margin-left: 18px;
+    padding: 10px 20px;
+}
+textarea {
+    width: 100%;
+    max-width: 630px;
+    height: 130px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 20px;
+}
+.SendMessage {
+    margin-top: 40px;
+}
+button[type="submit"]{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #E47D1F;
+    color: #E47D1F;
+    margin-left: 240px;
+    text-transform: uppercase;
+    padding: 15px 45px;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+button[type="submit"]:hover{
+    background-color:#E47D1F;
+    color: #FFF;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.right-blockMap {
+    /*text-align: right;*/
+    /*float: left;*/
+    /*background-color: rgba(0, 0, 0, 0.62);*/
+    /*color: #fff;*/
+    /*height: 100%;*/
+    /*width: 28%;*/
+    text-align: right;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.62);
+    color: #fff;
+    height: 100%;
+    width: 28%;
+    z-index: 3;
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+.RightBlockContainer {
+    margin-right: 70px;
+}
+.top {
+    overflow: hidden;
+    margin-top: 35px;
+    margin-bottom: 75px;
+}
+.top #clickButton {
+    float: right;
+    color: #fff;
+}
+.TeamBuilder {
+    float: left;
+    margin-left: 100px;
+}
+.TeamBuilder a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+.VisitUs {
+    margin-bottom: 66px;
+}
+.VisitUs span {
+    text-transform: uppercase;
+    color: #E57E20;
+    margin-bottom: 10px;
+    display: block;
+}
+.CallUs {
+    margin-bottom: 65px;
+}
+.CallUs span:first-child {
+    display: block;
+    text-transform: uppercase;
+    color: #E57E20;
+    margin-bottom: 5px;
+}
+.FollowUs {
+    margin-bottom: 140px;
+}
+.FollowUs span:first-child {
+    text-transform: uppercase;
+    color: #E57E20;
+    margin-bottom: 20px;
+    display: block;
+}
+.SocialMap a{
+    border: 1px solid #fff;
+    padding: 10px 12px;
+    border-radius: 18px;
+    margin-left: 10px;
+}
+.SocialMap .facebook {
+    padding: 8px 12px;
+    color: #fff;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.SocialMap .facebook:hover {
+    background-color: #4d4d4d;
+    color: #5466d6;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.SocialMap .twitter{
+    padding: 8px 9px;
+    color: #fff;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.SocialMap .twitter:hover{
+    background-color: #4d4d4d;
+    color: #6b9fd6;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.SocialMap .google{
+    padding: 8px 9px;
+    color: #fff;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.SocialMap .google:hover{
+    background-color: #4d4d4d;
+    color: #ff103f;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.ViewOnMap a{
+    border: 1px solid #fff;
+    padding: 15px 45px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.ViewOnMap a:hover{
+    background-color: white;
+    color: #E57E20;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+/*menu -----------------------------------------------------------------------------------------*/
+#close {
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 27px;
+    width: 15px;
+    margin-left: 55px;
+}
+.sidebar {
+    width: 100%;
+    background: url("../../img/background-2.0.png") no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    top:0;
+    color: white;
+    left:0;
+    z-index: 99;
+    font-family: RobotoLight;
+    -webkit-transition: .3s ease-in;
+    -moz-transition: .3s ease-in;
+    -ms-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+    transition: .3s ease-in;
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+}
+.sidebar.active{
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.sidebar ul li {
+    list-style: none;
+}
+.sidebar ul li a {
+   position: relative;
+}
+.sidebar  a {
+    color: white;
+    text-decoration: none;
+    font-size: 44px;
+    font-weight: bold;
+    position: relative;
+}
+.sidebar li a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #fff7fc;
+    content: '';
+    opacity: 0;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.sidebar li a:hover::after,
+.sidebar li a:focus::after,
+.sidebar li a.active::after {
+    opacity: 1;
+    width: 100%;
+}
+.sidebar ul li:last-child{
+    margin-bottom: 30px;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 44px;
+    font-weight: bold;
+}
+.number span{
+    display: block;
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+.number {
+    margin-bottom: 40px;
+    text-align: right;
+}
+.social {
+    margin-bottom: 20px;
+    text-align: right;
+}
+.social a {
+    font-size: 16px;
+}
+.social .fa{
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 20px;
+    margin-right: 10px;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.social .fa-facebook {
+    padding: 8px 12px
+}
+.social .fa:hover{
+    background-color: white;
+    color: #e47d1f;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.blog {
+    text-transform: uppercase;
+    margin-top: 265px;
+}
+.blog a {
+    display: block;
+    text-align: right;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: normal;
+}
+.blog a:hover{
+   color: #afafaf;
+}
+.calculator {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 3px;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.calculator a {
+    font-size: 16px;
+    padding: 8px 12px;
+    display: block;
+}
+.calculator:hover {
+    background-color: white;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.calculator a:hover{
+    color: #e47d1f;
+}
+.menu-block {
+    /*max-width: 760px;*/
+    overflow: hidden;
+    margin-left: 100px;
+    width: 90%;
+}
+.left-block {
+    float: left;
+}
+.right-block {
+    float: right;
+    margin-right: 20%;
+}
+#closeMap {
+    z-index: 3;
+    position: absolute;
+    top: 1px;
+    margin-right: 14px;
+    opacity: 0;
+    right: 0;
+}
+#closeMap a {
+    color: #000;
+    text-decoration: none;
+}
+/*map*/
+.MapActive {
+    z-index: 2;
+}

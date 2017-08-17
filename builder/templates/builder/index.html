@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Booking </title>
+
+    <link rel="stylesheet" href="../../static/builder/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/builder/css/style.css"/>
+    <link rel="stylesheet" href="../../static/builder/css/select/select.min.css">
+
+    <script src="../../static/builder/js/jquery/jquery.min.js"></script>
+    <script src="../../static/builder/js/bootstrap.min.js"></script>
+    <script src="../../static/builder/js/angular/angular.min.js"></script>
+    <script src="../../static/builder/js/indexmodul.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+
+    <script src="../../static/builder/js/angular/angular-material.min.js"></script>
+    <script src="../../static/builder/js/select/angular-sanitize.min.js"></script>
+    <script src="../../static/builder/js/select/select.min.js"></script>
+
+
+
+</head>
+<body  ng-app="indexModule" ng-controller="indexInit">
+<div class="wrapper-top">
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="../../static/builder/img/logo-top.png" alt="cusbee">
+            </div>
+            <div class="description-top">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
+            <div class="bottom-top">
+                <a href="#cont" target="_self">Get Started!</a>
+            </div>
+            <div class="icon-top">
+                <a href=""><img src="../../static/builder/img/favourite.png" alt=""></a>
+                <a href=""><img src="../../static/builder/img/users.png" alt=""></a>
+                <a href=""><img src="../../static/builder/img/calendar.png" alt=""></a>
+                <a href=""><img src="../../static/builder/img/clock.png" alt=""></a>
+            </div>
+            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+        </div>
+    </div>
+</div>
+<div class="wrapper-content">
+    <div class="container contentDiv">
+        <h1 id="cont">PROJECT DESCRIPTION</h1>
+        <div class="about-project">
+            <span>write a few words about your project and we will find the dest players for <a href="">you</a></span>
+        </div>
+        <div class="form-group">
+            <form name="myForm">
+                <textarea maxlength="300" ng-model="newBooking.projectDescription" ng-minlength="5" placeholder="Write about your project,min 5 words" ng-required="true" id="projectDescription " style="width: 500px; margin: auto" class="form-control" rows="3"></textarea>
+                <img style="position: absolute;right: 23%;top: 20%;" src="../../static/builder/img/check.png" ng-hide="myForm.$invalid" alt="check">
+                <img style="position: absolute;right: 23%;top: 14%;" src="../../static/builder/img/cross.png" ng-show="myForm.$invalid" alt="cross">
+            </form>
+        </div>
+        <!--<div class="check-button">-->
+            <!--<a href=""><img src="img/Check1.png" alt=""></a>-->
+        <!--</div>-->
+        <div class="add-new-player" id="addteamplayer">
+         <span>Add new team player</span>
+        </div>
+    <div class="addDevDiv">
+            <div ng-repeat="newdeveloper in devList">
+                <div id="editableDiv" class="row" ng-show="newdeveloper.editable">
+                    <div class="col-md-2 col-md-offset-2">
+                            <ui-select  multiple ng-model="newdeveloper.langs">
+                                <ui-select-match placeholder="Select skills" ng-cloak>[[ $item.lang_name ]]</ui-select-match>
+                                <ui-select-choices repeat="item in (allSkillList.langs | filter: $select.search) track by item.id">
+                                    <span ng-bind="item.lang_name"></span>
+                                </ui-select-choices>
+                            </ui-select>
+                    </div>
+                    <div class="col-md-2">
+                        <ui-select  multiple ng-model="newdeveloper.frameworks">
+                            <ui-select-match placeholder="Select frame" ng-cloak>[[ $item.frame_name ]]</ui-select-match>
+                            <ui-select-choices repeat="item in (allSkillList.frameworks | filterByLang: newdeveloper.langs | filter: $select.search) track by item.id">
+                                <span ng-bind="item.frame_name"></span>
+                            </ui-select-choices>
+                        </ui-select>
+                    </div>
+                    <div class="col-md-2">
+                        <ui-select  multiple ng-model="newdeveloper.worktime">
+                            <ui-select-match placeholder="Select time" ng-cloak>[[ $item.time_name ]]</ui-select-match>
+                            <ui-select-choices repeat="item in (allSkillList.worktime | filter: $select.search) track by item.id">
+                                <span ng-bind="item.time_name"></span>
+                            </ui-select-choices>
+                        </ui-select>
+                    </div>
+                    <div class="col-md-2">
+                        <ui-select  multiple ng-model="newdeveloper.level">
+                            <ui-select-match placeholder="Select level" ng-cloak>[[ $item.lvl_name ]]</ui-select-match>
+                            <ui-select-choices repeat="item in allSkillList.level | filter: {lvl_name:$select.search } track by item.id">
+                                <span ng-bind="item.lvl_name"></span>
+                            </ui-select-choices>
+                        </ui-select>
+                    </div>
+                    <div class="col-md-2 addButtonDiv"  style="margin-top:-7px;cursor:pointer;">
+                        <img src="../../static/builder/img/edit.png" ng-click="edit(newdeveloper)"/>
+                        <img src="../../static/builder/img/close.png" ng-click="delete(newdeveloper)"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="for-manager">
+            <span>For this team we advise to choose our </span>
+        </div>
+    <div class="manager">
+            <a href="" ng-click="selectManager()">Manager</a>
+            <div class="manager-button">
+                <Button class="btn btn-warning" ng-show="twotwoeight">FIND THE BEST ONE FOR YOU!</Button>
+                <a href="" ng-show="twotwoeight" ng-click="unselectManager()"><img src="../../static/builder/img/close.png" alt=""/></a>
+            </div>
+
+        </div>
+    <div class="addDevTextDiv">
+            <form ng-submit="sendProjectData()" target="coverIndexObs">
+
+                <div class="write-down">
+                    <span>
+                        WRITE DOWN YOUR e-mail and we will send cv’s immideately
+                    </span>
+                </div>
+                <div class="form-group">
+                    <input type="email" ng-model="newBooking.clientEmail" class="form-control"  id="clientEmail" placeholder="E-MAIL">
+                </div>
+                <div class="button-form">
+
+                    <button type="submit" class="btn btn-warning">Recieve CV</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="thank-text">
+            <span>
+                THANK YOU FOR YOUR REQUEST <br>
+                We will find the best players for you!
+            </span>
+        </div>
+        <div class="logo-foot">
+            <img src="../../static/builder/img/logo-foot.png" alt="">
+        </div>
+     </footer>
+    <div class="border-foot">
+        IF SOMETHING GOES WRONG - JUST LET US KNOW AND WE WILL FIX IT
+    </div>
+</div>
+    <script>
+        $('.bottom-top a[href^="#"]').on('click', function(event) {
+            event.preventDefault();
+            var anchor = this.hash;
+            $('html, body').stop().animate({
+                scrollTop: $(anchor).offset().top - 50
+            }, 1500);
+        });
+    </script>
+
+</body>
+</html>

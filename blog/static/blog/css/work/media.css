@@ -1,0 +1,274 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1024px) {
+    .menu .logo {
+        margin-left: 5px;
+    }
+
+    .navigation a:first-child {
+        margin-right: 40px;
+    }
+
+    .navigation a:last-child {
+        margin-left: 40px;
+    }
+
+    .menu .fa {
+        margin-right: 10px;
+    }
+
+    .menu .builder {
+        margin-right: 80px;
+    }
+
+    .navigation {
+        width: 370px;
+    }
+
+    .menu-block {
+        margin-left: 0;
+    }
+
+    .blog {
+        margin-top: 305px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+    #close {
+        margin-left: 10px;
+    }
+
+    .left-block {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .blog {
+        margin-top: 240px;
+    }
+
+    .calculator {
+        margin-top: 0;
+    }
+
+    .sidebar ul li:last-child {
+        margin-bottom: 15px;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .navigation span {
+        font-size: 30px;
+    }
+
+    .navigation a:last-child {
+        margin-left: 20px;
+    }
+
+    .navigation a:first-child {
+        margin-right: 20px;
+    }
+
+    .navigation {
+        width: 280px;
+    }
+
+    .menu .builder {
+        margin-right: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 670px) {
+    /*.example .frame ul li .framevork {*/
+    /*top: 75% !important;*/
+    /*}*/
+    /*.text-slide {*/
+    /*display: none !important;*/
+    /*}*/
+    /*.example .scrollbar {*/
+    /*margin: 0 auto 0 !important;*/
+    /*}*/
+    /*.example .frame ul li a {*/
+    /*padding: 15px 15px !important;*/
+    /*height: 205px !important;*/
+    /*width: 205px !important;*/
+    /*}*/
+    /*.example .frame ul li a {*/
+    /*padding: 15px 15px !important;*/
+    /*height: 205px !important;*/
+    /*width: 205px !important;*/
+    /*margin-left: 15px !important;*/
+    /*}*/
+    /*.pagespan {*/
+    /*margin-top: 5px !important;*/
+    /*}*/
+    /*.example .frame {*/
+    /*margin: 0 auto !important;*/
+    /*height: 245px !important;*/
+    /*}*/
+
+}
+
+@media only screen and (max-width: 535px) {
+    .navigation span {
+        font-size: 20px;
+    }
+
+    .sidebar li a {
+        font-size: 37px;
+    }
+
+    .calculator {
+        margin-top: 65px;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+    .menu .builder {
+        display: none;
+    }
+
+    .navigation a:first-child {
+        margin-right: 0;
+    }
+
+    .navigation a:last-child {
+        margin-left: 0;
+    }
+
+    .navigation {
+        width: 168px;
+        margin-left: 157px;
+    }
+
+    .number span {
+        display: block;
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+
+    .blog {
+        margin-top: 90px;
+    }
+
+    .sidebar li a {
+        font-size: 20px;
+    }
+
+    .sidebar ul li {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+
+    .calculator {
+        margin-top: 65px;
+        position: relative;
+        left: 57%;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+    .menu .logo {
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+
+    .logo img {
+        width: 80%;
+    }
+
+    .navigation {
+        width: 147px;
+        margin-left: 130px;
+    }
+
+    .navigation span {
+        font-size: 15px;
+    }
+
+    .example .scrollbar {
+        margin: 10px auto 15px !important;
+        width: 275px !important;
+    }
+
+    .example .pages li {
+        margin: 0 2px !important;
+    }
+
+    .example .pages {
+        margin: 2px auto !important;
+        width: 285px !important;
+    }
+
+    .sidebar li a {
+        font-size: 20px;
+    }
+
+    .left-block {
+        margin-left: 7px;
+    }
+
+    .left-block ul {
+        margin: 0 0;
+    }
+
+    .right-block {
+        margin-right: 10px;
+    }
+
+    .menu-block {
+        width: 100%;
+    }
+
+    .number span {
+        display: block;
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
+
+    .social .fa {
+        margin-right: 0;
+    }
+
+    .calculator {
+        left: 42%;
+    }
+
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+
+}

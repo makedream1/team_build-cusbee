@@ -1,0 +1,14 @@
+@media (max-width: 678px) {
+    .WebDev{
+        width: auto;
+        float: none;
+        margin-right: 0;
+    }
+    .blocks-service{
+        padding-left: 0;
+    }
+    html,body{
+        height: auto;
+        overflow: scroll;
+    }
+}

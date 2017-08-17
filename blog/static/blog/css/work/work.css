@@ -1,0 +1,217 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html,body {
+    height: 100%;
+}
+#wrapper {
+    height: 100%;
+    overflow: hidden;
+}
+.menu {
+    height: 75px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+.menu .fa {
+    color: #ffa43d;
+    margin-top: 30px;
+    margin-right: 70px;
+    float: right;
+}
+.menu .logo {
+    margin-top: 8px;
+    margin-left: 70px;
+    float: left;
+}
+.menu .builder {
+    margin-right: 60px;
+    float: right;
+    margin-top: 32px;
+    text-transform: uppercase;
+}
+.menu .builder a {
+    text-decoration: none;
+    color: #ffa43d;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navigation {
+    margin: 17px auto;
+    width: 485px;
+    text-transform: uppercase;
+    color: #e47d1f;
+}
+.navigation * {
+    vertical-align: middle;
+}
+.navigation a:first-child {
+    margin-right: 125px;
+}
+.navigation a:last-child {
+   margin-left: 125px;
+}
+.navigation span {
+    font-size: 32px;
+}
+.sidebar {
+    width: 100%;
+    background: url("../../img/background-2.0.png") no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    top:0;
+    color: white;
+    left:0;
+    z-index: 99;
+    font-family: RobotoLight;
+    -webkit-transition: .3s ease-in;
+    -moz-transition: .3s ease-in;
+    -ms-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+    transition: .3s ease-in;
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+}
+.sidebar.active{
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.sidebar ul li {
+    list-style: none;
+}
+.sidebar ul li:last-child{
+    margin-bottom: 30px;
+}
+.sidebar  a {
+    color: white;
+    text-decoration: none;
+    font-size: 44px;
+    font-weight: bold;
+    position: relative;
+}
+.sidebar li a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #fff7fc;
+    content: '';
+    opacity: 0;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.sidebar li a:hover::after,
+.sidebar li a:focus::after,
+.sidebar li a.active::after {
+    opacity: 1;
+    width: 100%;
+}
+.number span{
+    display: block;
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+.number {
+    margin-bottom: 40px;
+    text-align: right;
+}
+.social {
+    margin-bottom: 20px;
+    text-align: right;
+}
+.social a {
+    font-size: 16px;
+}
+.social .fa{
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 20px;
+    margin-right: 10px;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.social .fa-facebook {
+    padding: 8px 12px
+}
+.social .fa:hover{
+    background-color: white;
+    color: #e47d1f;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.blog {
+    text-transform: uppercase;
+    margin-top: 265px;
+}
+.blog a {
+    display: block;
+    text-align: right;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: normal;
+}
+.calculator {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-left: 30px;
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 3px;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.calculator a {
+    font-size: 16px;
+    padding: 8px 12px;
+    display: block;
+}
+.calculator:hover {
+    background-color: white;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.calculator a:hover{
+    color: #e47d1f;
+}
+.menu-block {
+    overflow: hidden;
+    margin-left: 100px;
+    width: 90%;
+}
+.left-block {
+    float: left;
+}
+.right-block {
+    float: right;
+}
+#close {
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 27px;
+    width: 15px;
+    margin-left: 55px;
+}

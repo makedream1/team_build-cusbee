@@ -1,0 +1,219 @@
+.workBg{
+    background-image: url("../../img/background-2.0.png");
+    background-size: cover;
+    height: 100%;
+}
+
+.example button, .example button {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    opacity: .5;
+}
+
+.example button:hover, .example button:hover {
+    opacity: 1;
+}
+
+.example button:disabled, .example button:disabled {
+    opacity: .2;
+}
+
+.example .forward, .example .backward {
+    float: left;
+    width: 100px;
+    height: 200px;
+    font-size: 60px;
+}
+
+.example .forward {
+    float: right;
+}
+
+.example .frame {
+    margin: 30px auto 0px;
+    height: 400px;
+}
+
+.example .frame ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+    width: auto !important;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.example .frame ul li {
+    width: 265px;
+    height: 100%;
+    font-size: 14px;
+    padding: 0 7.5%;
+    display: inline-block;
+    position: relative;
+    white-space: normal;
+}
+
+/*.example .frame ul li:last-child{
+    padding: 0px 0px 0px 22px!important;
+}*/
+.example .frame ul li.active {
+    opacity: 1;
+}
+
+/*.example .frame img {width: 70%;}*/
+
+/*active block*/
+.example .frame ul li {
+    opacity: 0.2;
+}
+
+.example .frame ul li .framevork {
+    position: absolute;
+    top: 44%;
+    left: 115px;
+    font-size: 20px;
+    background-color: white;
+    height: 42px;
+    width: 45px;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid #ffaa4a;
+    line-height: 2;
+    color: #ffaa4a;
+}
+
+.example .frame ul li a {
+    display: block;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 142px;
+    height: 215px;
+    width: 215px;
+    line-height: 15;
+    text-align: center;
+}
+
+/*active block*/
+
+/*.example .scrollbar { margin: 30px auto 0px; width: 940px; height: 2px; line-height: 0; }*/
+.example .scrollbar {
+    margin: 30px auto 0px;
+    width: 80%;
+    min-width: 360px;
+    height: 2px;
+    background-image: url("../../img/slider/setting-slide/line.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.example .scrollbar .handle {
+    background-color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+    top: -9px;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+}
+
+.example .scrollbar .handle .mousearea {
+    position: absolute;
+    top: -9px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.example .pages {
+    list-style: none;
+    margin: 20px auto;
+    padding: 1px 5px;
+    text-align: center;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.example .pages li {
+    display: inline-block;
+    width: 42px;
+    line-height: 40px;
+    padding: 0;
+    /*border: 1px solid grey;*/
+    vertical-align: middle;
+    margin: 0 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 0;
+    overflow: hidden;
+    background: #fff;
+    -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+    -moz-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+    -ms-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+    -o-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+    white-space: nowrap;
+    position: relative;
+}
+
+.filterFramevork li img {
+    vertical-align: middle;
+    margin: 1px 2px;
+}
+.border-img {
+    border: 1px solid grey;
+}
+
+.example .controls {
+    margin: 50px 0 0;
+    text-align: center;
+}
+
+.example .controls .divider {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.example .controls button {
+    line-height: 32px;
+    vertical-align: middle;
+    font-family: Novecento, sans-serif;
+}
+
+.example .controls button i {
+    position: relative;
+    top: -2px;
+    margin: 5px;
+    padding: 0;
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+.text-slide {
+    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.text-slide span:first-child {
+    font-size: 30px;
+    padding-bottom: 10px;
+    margin-right: 40px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.text-slide span:last-child {
+    font-size: 17.5px;
+    text-align: left;
+    display: block;
+}

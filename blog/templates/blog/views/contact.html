@@ -1,0 +1,94 @@
+
+<div id="map_canvas" class="map " ng-class="{'active' : !showMap}" style="width:100%;height: 100%;"></div>
+
+<button style="position: absolute;top:12%;margin:0;z-index: 9; background-color: rgba(0, 0, 0, 0.44);
+  color: #fff; width: 100%; padding: 11px 0px;text-transform: inherit;" class="hidden-laptop" ng-click="(showMap = !showMap)" ng-show="!showMap">Concact us</button>
+
+<div class="form-register" ng-class="{'active' : showMap}">
+  <div class="content-contact">
+    <div class="left-blockMap" ng-class="{'active' : showMap}">
+      <div class="head">
+        <div class="logo">
+            <a href="#/"><img src="../../../static/blog/img/logo-cusbee.png" alt="Cusbee"></a>
+        </div>
+          <!--<div class="bottom-block">-->
+            <!--<button ng-click="(main.slider = !main.slider)" id="clickButton" class="hidden-laptop"><i class="fa fa-bars fa-lg"></i></button>-->
+            <!--<a href="#/" class="hidden-laptop hidden-service"><img src="img/phone/add_user-service.png" alt="builder"></a>-->
+          <!--</div>-->
+        <div class="navigation-service">
+          <a href="#/"><img src="../../../static/blog/img/slider/setting-slide/left.png" alt="left"></a>
+          <span>{{page.title}}</span>
+          <a href="#/"><img src="../../../static/blog/img/slider/setting-slide/right.png" alt="right"></a>
+        </div>
+      </div>
+      <div class="MarginLeft" ng-show="showMap">
+        <span class="GetIn">Get in Touch</span>
+        <span class="WriteUs">Write us a letter if interested in cooperation and with us or you just want to ask questuon</span>
+        <form action="" name="myForm" class="hidden-laptop" ng-show="showBlock">
+          <input type="email" name="emailInp" ng-model="emailInp" placeholder="Your mail" required><br>
+          <div role="alert">
+            <!--<span class="error" ng-show="myForm.emailInp.$error.required">-->
+              <!--Required!</span>-->
+            <span class="error" ng-show="myForm.emailInp.$error.email">
+              Not valid email!</span>
+          </div>
+          <input type="text" placeholder="Your name"> <input type="tel" placeholder="Your phone"><br>
+          <textarea name=""  cols="30" rows="10" placeholder="Your message"></textarea><br>
+          <div class="SendMessage">
+            <button type="submit">Send</button>
+            <!--<button  type="submit" class="hidden-laptop" ng-click="(showMap = !showMap)">Back</button>-->
+            <button type="button" class="hidden-laptop" ng-click="showBlock = ! showBlock">Back</button>
+          </div>
+        </form>
+        <form action="" name="myForm" class="hidden-phone"  ng-hide="showBlock">
+          <input type="email" name="emailInp" ng-model="emailInp" placeholder="Your mail" required><br>
+          <div role="alert">
+            <!--<span class="error" ng-show="myForm.emailInp.$error.required">-->
+              <!--Required!</span>-->
+            <span class="error" ng-show="myForm.emailInp.$error.email">
+              Not valid email!</span>
+          </div>
+          <input type="text" placeholder="Your name"> <input type="tel" placeholder="Your phone"><br>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea><br>
+          <div class="SendMessage">
+            <button type="submit">Send</button>
+            <!--<button  type="submit" class="hidden-laptop" ng-click="(showMap = !showMap)">Back</button>-->
+            <button type="button" class="hidden-laptop" ng-click="showBlock = ! showBlock">Back</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="right-blockMap contactTeam" ng-hide="showBlock">
+      <div class="RightBlockContainer" >
+        <div class="top">
+          <div class="TeamBuilder">
+            <a href="#/">Team builder</a>
+          </div>
+          <button ng-click="(main.slider = !main.slider)" id="clickButton"><i class="fa fa-bars fa-lg"></i></button>
+        </div>
+        <div class="VisitUs">
+          <span>Visit Us</span>
+          <p>Ukraine,UA</p>
+          <p>Chernivtsi,Shevchenko Street 28</p>
+          <p>58001,Office 204-207</p>
+        </div>
+        <div class="CallUs">
+          <span>Call Us</span>
+          <span>+380 99 04 69 063</span>
+        </div>
+        <div class="FollowUs">
+          <span>Follow Us</span>
+          <div class="SocialMap">
+            <a href="https://www.facebook.com/cusbee" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="http://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="http://www.google.com" class="google"><i class="fa fa-google"></i></a>
+          </div>
+        </div>
+        <div class="ViewOnMap">
+          <a ng-click="(showMap = !showMap)" class="showMapLaptop" id="ViewMap showMapLaptop">View On Map</a> <br>
+          <a class="hidden-laptop" ng-click="showBlock =  !showBlock">Concact US</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

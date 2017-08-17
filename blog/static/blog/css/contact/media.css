@@ -1,0 +1,277 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1024px) {
+    .RightBlockContainer {
+        margin-right: 30px;
+    }
+    .FollowUs {
+        margin-bottom: 175px;
+    }
+    .navigation a:first-child {
+        margin-right: 100px;
+    }
+    .navigation a:last-child {
+        margin-left: 100px;
+    }
+    .content .MarginLeft {
+        margin-left: 55px;
+    }
+    .SendMessage {
+        margin-top: 40px;
+    }
+    textarea {
+        height: 165px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .TeamBuilder {
+        margin-left: 30px;
+    }
+    .RightBlockContainer {
+        margin-right: 20px;
+    }
+    .FollowUs {
+        margin-bottom: 100px;
+    }
+    .ViewOnMap a {
+        border: 1px solid #fff;
+        padding: 15px 25px;
+    }
+    .navigation {
+        float: right;
+        margin-right: 20px;
+        margin-top: 15px;
+    }
+    .navigation a:first-child {
+        margin-right: 20px;
+    }
+    .navigation a:last-child {
+        margin-left: 20px;
+    }
+    .form-register .logo {
+        margin-left: 35px;
+    }
+    .content .MarginLeft {
+        margin-left: 30px;
+    }
+    input[type="email"] {
+        max-width: 455px;
+    }
+    input[type="text"] {
+        max-width: 455px;
+    }
+    input[type="number"] {
+        margin-left: 0;
+        max-width: 455px;
+    }
+    textarea {
+        max-width: 455px;
+        height: 90px;
+    }
+    button[type="submit"] {
+        margin-left: 160px;
+    }
+    .SendMessage {
+        margin-top: 17px;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 800px) {
+    .TeamBuilder {
+        margin-left: 10px;
+    }
+    .RightBlockContainer {
+        margin-right: 10px;
+    }
+    .ViewOnMap a {
+        padding: 15px 15px;
+    }
+    .FollowUs {
+        margin-bottom: 135px;
+    }
+    .navigation span {
+        font-size: 25px;
+    }
+    input[type="email"] {
+        max-width: 340px;
+    }
+    input[type="text"] {
+        max-width: 340px;
+    }
+    textarea {
+        max-width: 340px;
+    }
+    input[type="number"] {
+        max-width: 340px;
+    }
+    button[type="submit"] {
+        margin-left: 90px;
+    }
+    .menu-block {
+        margin-left: 30px;
+    }
+    .sidebar li a {
+        font-size: 34px;
+    }
+    .right-block {
+        margin-right: 10px;
+    }
+    .blog {
+        margin-top: 220px;
+    }
+    .navigation {
+        margin-right: 60px;
+    }
+
+}
+@media only screen and (max-width : 765px) {
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .form-register .logo {
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+    .navigation {
+        margin-top: -42px;
+        margin-right: 45px;
+    }
+    .navigation a:first-child {
+        margin-right: 0;
+    }
+    .navigation a:last-child {
+        margin-left: 0;
+    }
+    .RightBlockContainer {
+        margin-right: 1px;
+    }
+    .TeamBuilder {
+        margin-left: 9px;
+        margin-left: 9px;
+        font-size: 12px;
+    }
+    .top #clickButton {
+        margin-right: 15px;
+        margin-top: 0;
+    }
+    .top {
+        margin-bottom: 50px;
+    }
+    .right-blockMap {
+        width: 40%;
+    }
+    .CallUs {
+        margin-bottom: 90px;
+    }
+    .VisitUs {
+        margin-bottom: 70px;
+    }
+    .FollowUs {
+        margin-bottom: 151px;
+    }
+    .logo img {
+        width: 55%;
+    }
+    .navigation span {
+        font-size: 15px;
+        position: relative;
+        bottom: 15px;
+    }
+    .content .MarginLeft {
+        margin-left: 5px;
+    }
+    textarea {
+        max-width: 170px;
+    }
+    input[type="number"] {
+        max-width: 170px;
+    }
+    input[type="text"] {
+        max-width: 170px;
+    }
+    input[type="email"] {
+        max-width: 170px;
+    }
+    button[type="submit"] {
+        margin-left: 5px;
+    }
+    .menu-block {
+        margin-left: 10px;
+    }
+    #close {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .sidebar li a {
+        font-size: 30px;
+    }
+    .sidebar ul li:last-child {
+        margin-bottom: 0;
+    }
+    .calculator {
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .right-block {
+        margin-right: 0;
+        float: none;
+    }
+    .number {
+        margin-bottom: 15px;
+    }
+    .number span {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .social {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .blog {
+        margin-top: 20px;
+        width: 55px;
+    }
+    .left-block {
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

@@ -1,0 +1,290 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: RobotoRegular;
+}
+html,body {
+    height: 100%;
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    position: relative;
+    height: 100%;
+}
+/*menu......................................................................................*/
+.menu {
+    overflow: hidden;
+    /*margin-top: 5px;*/
+}
+.logo {
+    float: left;
+    margin-left: 47px;
+}
+.navigation {
+    text-align: center;
+    font-size: 32px;
+    color: #e47d1f;
+    margin-top: 8px;
+}
+.navigation * {
+    vertical-align: middle;
+}
+.navigation a:first-child {
+    margin-right: 100px;
+}
+.navigation a:last-child {
+    margin-left: 100px;
+}
+.builder {
+    float: right;
+    margin-right: 50px;
+    margin-top: 22px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.builder a {
+    color: #e47d1f;
+}
+#clickButton {
+    float: right;
+    margin-right: 70px;
+    color: #e47d1f;
+    margin-top: 22px;
+}
+.menu .fa-lg {
+    font-size: 1.033em;
+    line-height: .75em;
+    vertical-align: -15%;
+}
+
+/*sideBar .................................................................*/
+.sidebar {
+    width: 100%;
+    background: url("../../img/background-2.0.png") no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    top:0;
+    color: white;
+    left:0;
+    z-index: 99;
+    font-family: RobotoLight;
+    -webkit-transition: .3s ease-in;
+    -moz-transition: .3s ease-in;
+    -ms-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+    transition: .3s ease-in;
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+}
+.sidebar.active{
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.sidebar ul li {
+    list-style: none;
+}
+.sidebar ul li:last-child{
+    margin-bottom: 30px;
+}
+.sidebar  a {
+    color: white;
+    text-decoration: none;
+    font-size: 44px;
+    font-weight: bold;
+    position: relative;
+}
+.sidebar li a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #fff7fc;
+    content: '';
+    opacity: 0;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.sidebar li a:hover::after,
+.sidebar li a:focus::after,
+.sidebar li a.active::after {
+    opacity: 1;
+    width: 100%;
+}
+.number span{
+    display: block;
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+.number {
+    margin-bottom: 40px;
+    text-align: right;
+}
+.social {
+    margin-bottom: 20px;
+    text-align: right;
+}
+.social a {
+    font-size: 16px;
+}
+.social .fa{
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 20px;
+    margin-right: 10px;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.social .fa-facebook {
+    padding: 8px 12px
+}
+.social .fa:hover{
+    background-color: white;
+    color: #e47d1f;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.blog {
+    text-transform: uppercase;
+    margin-top: 265px;
+}
+.blog a {
+    display: block;
+    text-align: right;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: normal;
+}
+.calculator {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 3px;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.calculator a {
+    font-size: 16px;
+    display: block;
+    padding: 8px 12px;
+}
+.calculator:hover {
+    background-color: white;
+    -webkit-transition: 500ms;
+    -moz-transition:500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+.calculator a:hover{
+    color: #e47d1f;
+}
+.menu-block {
+    overflow: hidden;
+    margin-left: 100px;
+    width: 90%;
+}
+.left-block {
+    float: left;
+}
+.right-block {
+    float: right;
+    margin-right: 20%;
+}
+#close {
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 27px;
+    width: 15px;
+    margin-left: 55px;
+}
+/*content......................................................................................................*/
+.blocks-service {
+    overflow: hidden;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+.WebDev {
+    width: 25%;
+    float: left;
+    margin-bottom: 20px;
+    height: 250px;
+    padding-left: 28px;
+    padding-top: 20px;
+    margin-right: 150px;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+}
+.margin-left{
+    margin-right: 0px;
+}
+.WebDev:hover {
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    -webkit-box-shadow: 1px 5px 13px 0px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow:    1px 5px 13px 0px rgba(0, 0, 0, 0.52);
+    box-shadow:         1px 5px 13px 0px rgba(0, 0, 0, 0.52);
+}
+.WebDev h1,h2{
+    font-size: 18px;
+    color: #e9974c;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.WebDev span{
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: block;
+    font-family: RobotoLight;
+}
+.WebDev a {
+    color: black;
+    border: 1px solid black;
+    padding: 5px 12px;
+    text-transform: uppercase;
+}
+.WebDev img {
+    padding-left: 10px;
+
+}
+.WebDev a:hover img{
+    -moz-transform: scale(0.9) rotate(179deg);
+    -webkit-transform: scale(0.9) rotate(179deg);
+    -o-transform: scale(0.9) rotate(179deg);
+    -ms-transform: scale(0.9) rotate(179deg);
+    transform: scale(0.9) rotate(179deg);
+
+    /*-moz-transform: scale(0.9) rotate(360deg);*/
+    /*-webkit-transform: scale(0.9) rotate(360deg);*/
+    /*-o-transform: scale(0.9) rotate(360deg);*/
+    /*-ms-transform: scale(0.9) rotate(360deg);*/
+    /*transform: scale(0.9) rotate(360deg);*/
+}

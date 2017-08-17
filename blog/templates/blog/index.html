@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cus"  ng-class="{'notFlow': bodyCss}">
+<head>
+  <meta charset="UTF-8">
+  <title>Cusbee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../static/blog/css/slider/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../static/blog/css/custom.css">
+  <link rel="stylesheet" href="../../static/blog/css/media.css">
+  <script src="../../static/blog/node_modules/angular/angular.min.js"></script>
+  <script src="../../static/blog/node_modules/angular-route/angular-route.min.js"></script>
+
+  <script src="../../static/blog/js/jquery.min.js"></script>
+  <script src="../../static/blog/js/controller.js"></script>
+  <script src="../../static/blog/js/slider/main-min.js"></script>
+  <script src="../../static/blog/js/slider/sly.js"></script>
+  <script src="../../static/blog/js/slider/modernizr.js"></script>
+  <script src="../../static/blog/js/service/main-min.js"></script>
+  <script src="../../static/blog/js/about/main.js"></script>
+
+  <!--<base href="/">-->
+</head>
+<body ng-controller="mainCtrl as main" ng-class="{'notFlow': bodyCss}">
+  <div class="sidebar" ng-class="{'active': main.slider}">
+    <button ng-click="main.slider = !main.slider" id="close"><img src="../../static/blog/img/close.png" alt=""></button>
+    <div class="menu-block">
+      <div class="left-block">
+        <ul>
+          <li ng-click="main.slider = !main.slider"><a href="#/">How we do</a></li>
+          <li ng-click="main.slider = !main.slider"><a href="#/work">What we create</a></li>
+          <li ng-click="main.slider = !main.slider"><a href="#/">What we do</a></li>
+          <li ng-click="main.slider = !main.slider"><a href="#/service">Our expertice</a></li>
+          <li ng-click="main.slider = !main.slider"><a href="#/about">About us</a></li>
+          <li ng-click="main.slider = !main.slider"><a href="#/contact">Get in touch</a></li>
+        </ul>
+        <div class="calculator">
+           <a href="#">Calculator</a>
+        </div>
+      </div>
+      <div class="right-block">
+        <div class="number">
+          <span>office@website.com</span>
+          <p>(912)555-1234</p>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/cusbee"><i class="fa fa-facebook"></i></a>
+          <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+          <a href="http://www.google.com"><i class="fa fa-google"></i></a>
+        </div>
+        <div class="blog">
+          <a href="#/blog" ng-click="main.slider = !main.slider">Blog</a>
+          <a href="#/" ng-click="main.slider = !main.slider">Careers</a>
+        </div>
+    </div>
+    </div>
+  </div>
+  <ng-view></ng-view>
+
+</body>
+</html>
